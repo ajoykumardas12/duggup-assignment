@@ -6,4 +6,6 @@
 
 <Navbar />
 <Separator />
-<slot />
+<main class="px-8 py-2">
+	<slot />
+</main>
