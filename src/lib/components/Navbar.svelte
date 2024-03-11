@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { ChevronDown } from 'svelte-radix';
+	import { Button } from '$lib/components/ui/button';
 
 	const navItems = [
 		{
@@ -14,37 +15,38 @@
 		{
 			name: 'Learn',
 			icon: 'icons/book.svg'
-		},
-		{
-			name: 'Post',
-			icon: 'icons/plus-square.svg'
 		}
 	];
 </script>
 
-<nav>
-	<div>
-		<img src="/icons/duggup-logo.png" alt="duggup logo" />
-		<span>duggup</span>
+<nav class="flex px-2 py-3">
+	<div class="flex items-center gap-1">
+		<img src="/icons/duggup-logo.png" alt="duggup logo" class="w-7" />
+		<span class="mb-1 text-xl font-semibold">duggup</span>
 	</div>
-	<ul>
+	<ul class="ml-auto flex items-center gap-6 text-sm">
 		{#each navItems as navItem}
 			<li>
-				<span>
-					<img src={navItem.icon} alt={navItem.name} />
-				</span>
-				<span>{navItem.name}</span>
+				<!-- svelte-ignore a11y-invalid-attribute -->
+				<a href="#" class="flex items-center gap-2">
+					<img src={navItem.icon} alt={navItem.name} class="w-5" />
+					<span>{navItem.name}</span>
+				</a>
 			</li>
 		{/each}
+		<Button href="#" variant="outline" class="border-[1px] border-b-4 border-[#4d4d4d]">
+			<img src="icons/plus-square.svg" alt="Post" class="w-5" />
+			<span>Post</span>
+		</Button>
 	</ul>
-	<div>
+	<div class="ml-8 flex cursor-pointer items-center gap-2 text-sm">
 		<span>
-			<Avatar.Root>
+			<Avatar.Root class="border border-stone-400">
 				<Avatar.Image src="/profile-image.png" alt="profile image" />
 				<Avatar.Fallback>KK</Avatar.Fallback>
 			</Avatar.Root>
 		</span>
 		<span>Krishna Kiran</span>
-		<ChevronDown />
+		<ChevronDown size={16} />
 	</div>
 </nav>
