@@ -1,4 +1,5 @@
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import plugin from 'tailwindcss/plugin';
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -47,7 +48,12 @@ const config = {
 				card: {
 					DEFAULT: 'hsl(var(--card) / <alpha-value>)',
 					foreground: 'hsl(var(--card-foreground) / <alpha-value>)'
-				}
+				},
+				brand: 'var(--brand)',
+				neutral: 'var(--neutral)',
+				gray: 'var(--gray)',
+				'grayish-blue': 'var(--grayish-blue)',
+				'light-grayish=-blue': 'var(--light-grayish-blue)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -58,7 +64,12 @@ const config = {
 				sans: [...fontFamily.sans]
 			}
 		}
-	}
+	},
+	plugins: [
+		plugin(function ({ addVariant }) {
+			addVariant('hocus', ['&:hover', '&:focus']);
+		})
+	]
 };
 
 export default config;
