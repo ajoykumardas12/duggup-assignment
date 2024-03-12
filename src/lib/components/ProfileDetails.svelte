@@ -14,7 +14,7 @@
 			<Avatar.Image src={userDetails.imgSrc} alt="Profile" />
 			<Avatar.Fallback>{nameInitials}</Avatar.Fallback>
 		</Avatar.Root>
-		<h1 class="text-2xl font-bold text-grayish-blue">
+		<h1 class="text-grayish-blue text-2xl font-bold">
 			{`${userDetails.firstName} ${userDetails.lastName}`}
 		</h1>
 	</div>
@@ -29,15 +29,14 @@
 			<div class="flex flex-col items-center gap-0.5 md:items-end">
 				<img src="icons/duggup-logo.png" alt="duggup" class="w-8 rounded-full" />
 				<span class="text-base font-semibold">{userDetails.company}</span>
-				<span class="text-nowrap text-xs font-semibold text-gray">{userDetails.position}</span>
+				<span class="text-gray text-nowrap text-xs font-semibold">{userDetails.position}</span>
 			</div>
-			<div class="mt-4 flex flex-col items-center gap-4 text-nowrap text-neutral md:flex-row">
-				<!-- svelte-ignore a11y-invalid-attribute -->
+			<div class="text-neutral mt-4 flex flex-col items-center gap-4 text-nowrap md:flex-row">
 				<a href={userDetails.website} class="flex gap-1">
 					<span class="text-sm">My Website</span>
 					<ExternalLink size={16} />
 				</a>
-				<button class="flex items-center gap-1 hocus:text-brand">
+				<button class="hocus:text-brand flex items-center gap-1">
 					<span>Options</span>
 					<Ellipsis size={22} />
 				</button>
