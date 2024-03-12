@@ -24,25 +24,25 @@
 		<img src="/icons/site-logo.png" alt="duggup logo" class="w-7" />
 		<span class="mb-1 text-xl">duggup</span>
 	</a>
-	<ul class="text-neutral ml-auto flex items-center gap-2 text-sm">
+	<ul class="ml-auto flex items-center gap-2 text-sm text-neutral">
 		{#each navItems as navItem}
 			<li>
 				<!-- svelte-ignore a11y-invalid-attribute -->
 				<a
 					href="#"
-					class="hocus:bg-stone-200 hocus:text-brand flex items-center gap-2 rounded-md px-3 py-2"
+					class="flex items-center gap-2 rounded-md px-3 py-2 hocus:bg-stone-200 hocus:text-brand"
 				>
 					<img src={navItem.icon} alt={navItem.name} class="w-5" />
 					<span>{navItem.name}</span>
 				</a>
 			</li>
 		{/each}
-		<Button href="#" variant="outline" class="border-neutral border-[1px] border-b-4">
+		<Button href="#" variant="outline" class="border-[1px] border-b-4 border-neutral">
 			<img src="icons/plus-square.svg" alt="Post" class="w-5" />
 			<span>Post</span>
 		</Button>
 	</ul>
-	<button class="text-neutral ml-8 flex cursor-pointer items-center gap-2 text-base">
+	<button class="ml-8 flex cursor-pointer items-center gap-2 text-base text-neutral">
 		<span>
 			<Avatar.Root class="border border-stone-400">
 				<Avatar.Image src="/profile-image.png" alt="profile image" />

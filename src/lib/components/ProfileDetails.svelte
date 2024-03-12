@@ -10,7 +10,7 @@
 			<Avatar.Image src="profile-image.png" alt="Profile" />
 			<Avatar.Fallback>KK</Avatar.Fallback>
 		</Avatar.Root>
-		<h1 class="text-grayish-blue text-2xl font-bold">Krishna Kiran</h1>
+		<h1 class="text-2xl font-bold text-grayish-blue">Krishna Kiran</h1>
 	</div>
 	<div class="flex h-max">
 		<div class="flex flex-col justify-between">
@@ -25,9 +25,9 @@
 			<div class="flex flex-col items-end gap-0.5">
 				<img src="icons/duggup-logo.png" alt="duggup" class="w-8 rounded-full" />
 				<span class="text-base font-semibold">Duggup</span>
-				<span class="text-gray text-nowrap text-xs font-semibold"> Co-Founder and CEO </span>
+				<span class="text-nowrap text-xs font-semibold text-gray"> Co-Founder and CEO </span>
 			</div>
-			<div class="text-neutral mt-4 flex items-center gap-4 text-nowrap">
+			<div class="mt-4 flex items-center gap-4 text-nowrap text-neutral">
 				<!-- svelte-ignore a11y-invalid-attribute -->
 				<a href="#" class="flex gap-1">
 					<span class="text-sm">My Website</span>

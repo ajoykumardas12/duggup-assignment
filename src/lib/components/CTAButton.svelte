@@ -6,7 +6,7 @@
 
 <Button
 	variant="outline"
-	class="border-neutral hocus:border-b-2 hocus:border-b-neutral hocus:border-t-transparent hocus:bg-brand hocus:text-white w-max border-[1px] border-b-4 hover:border-x-transparent"
+	class="w-max border-[1px] border-b-4 border-neutral hover:border-x-transparent hocus:border-b-2 hocus:border-b-neutral hocus:border-t-transparent hocus:bg-brand hocus:text-white"
 >
 	{text}
 </Button>
