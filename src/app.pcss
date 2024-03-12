@@ -31,6 +31,12 @@
 		--destructive: 0 72.2% 50.6%;
 		--destructive-foreground: 60 9.1% 97.8%;
 
+		--brand: #0066ff;
+		--neutral: #4d4d4d;
+		--gray: #7a9299;
+		--grayish-blue: #4b5c6d;
+		--light-grayish-blue: #778fb1;
+
 		--ring: 20 14.3% 4.1%;
 
 		--radius: 0.5rem;
@@ -74,5 +80,11 @@
 	}
 	body {
 		@apply bg-background text-foreground;
+	}
+	a:hover {
+		color: var(--brand);
+	}
+	a:focus {
+		color: var(--brand);
 	}
 }

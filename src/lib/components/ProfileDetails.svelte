@@ -10,7 +10,7 @@
 			<Avatar.Image src="profile-image.png" alt="Profile" />
 			<Avatar.Fallback>KK</Avatar.Fallback>
 		</Avatar.Root>
-		<h1 class="text-2xl font-bold text-[#4B5C6D]">Krishna Kiran</h1>
+		<h1 class="text-grayish-blue text-2xl font-bold">Krishna Kiran</h1>
 	</div>
 	<div class="flex h-max">
 		<div class="flex flex-col justify-between">
@@ -21,7 +21,7 @@
 			</p>
 			<Button
 				variant="outline"
-				class="w-max border-[1px] border-b-4 border-[#4d4d4d] hover:border-transparent hover:border-b-[#4d4d4d] hover:bg-[#0066FF] hover:text-white"
+				class="border-neutral hocus:bg-brand hocus:border-b-neutral hocus:border-b-2 hocus:border-t-transparent hocus:text-white w-max border-[1px] border-b-4 hover:border-x-transparent"
 			>
 				Follow
 			</Button>
@@ -30,15 +30,17 @@
 			<div class="flex flex-col items-end gap-0.5">
 				<img src="icons/duggup-logo.png" alt="duggup" class="w-8 rounded-full" />
 				<span class="text-base font-semibold">Duggup</span>
-				<span class="text-nowrap text-xs font-semibold text-[#4d4d4d]"> Co-Founder and CEO </span>
+				<span class="text-gray text-nowrap text-xs font-semibold"> Co-Founder and CEO </span>
 			</div>
-			<div class="mt-4 flex items-center gap-4 text-nowrap text-[#4d4d4d]">
+			<div class="text-neutral mt-4 flex items-center gap-4 text-nowrap">
 				<!-- svelte-ignore a11y-invalid-attribute -->
 				<a href="#" class="flex gap-1">
 					<span class="text-sm">My Website</span>
-					<ExternalLink size={16} color="#4d4d4d" />
+					<ExternalLink size={16} />
 				</a>
-				<Ellipsis color="#4d4d4d" size={22} class="cursor-pointer " />
+				<button>
+					<Ellipsis size={22} class="hocus:text-brand" />
+				</button>
 			</div>
 		</div>
 	</div>
