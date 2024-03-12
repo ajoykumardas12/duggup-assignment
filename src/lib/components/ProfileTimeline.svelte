@@ -8,9 +8,9 @@
 		<div
 			class="border-light-grayish-blue relative box-border flex w-[18%] items-center justify-end border-r-4 border-dotted"
 		>
-			<div class="text-gray p-4 pr-6 font-semibold">Dec 2023</div>
+			<div class="p-4 pr-6 font-semibold text-gray">Dec 2023</div>
 			<div
-				class="top border-brand absolute right-0 top-1/2 aspect-square w-4 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-[3px] bg-secondary"
+				class="top absolute right-0 top-1/2 aspect-square w-4 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-[3px] border-brand bg-secondary"
 			></div>
 		</div>
 		<div class="m-6 ml-8 flex gap-10">
@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<div class="flex justify-stretch">
-		<div class="text-gray border-light-grayish-blue relative w-[18%] border-r-4 border-dotted">
+		<div class="border-light-grayish-blue relative w-[18%] border-r-4 border-dotted text-gray">
 			<div class="flex flex-col items-end p-6 pl-4 text-base">
 				<img
 					src="icons/duggup-logo.png"
@@ -35,14 +35,14 @@
 				<ChevronUp />
 			</div>
 			<div
-				class="top border-brand absolute right-0 top-1/2 aspect-square w-6 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-8 bg-background"
+				class="top absolute right-0 top-1/2 aspect-square w-6 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-8 border-brand bg-background"
 			></div>
 		</div>
 		<div class="m-6 ml-8 flex flex-col items-start justify-center">
 			<h3 class="text-xl font-bold">Co-Founder and CEO</h3>
-			<div class="text-gray flex items-center">
+			<div class="flex items-center text-gray">
 				Full Time
-				<div class="bg-neutral mx-2 h-1 w-1 rounded-full"></div>
+				<div class="mx-2 h-1 w-1 rounded-full bg-neutral"></div>
 				Remote
 			</div>
 		</div>
@@ -51,9 +51,9 @@
 		<div
 			class="border-light-grayish-blue relative box-border flex w-[18%] items-center justify-end border-r-4 border-dotted"
 		>
-			<div class="text-gray p-4 pr-6 font-semibold">Dec 2023</div>
+			<div class="p-4 pr-6 font-semibold text-gray">Dec 2023</div>
 			<div
-				class="top border-brand absolute right-0 top-1/2 aspect-square w-4 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-[3px] bg-secondary"
+				class="top absolute right-0 top-1/2 aspect-square w-4 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-[3px] border-brand bg-secondary"
 			></div>
 		</div>
 		<div class="m-6 ml-8 flex gap-10">
@@ -62,7 +62,7 @@
 		</div>
 	</div>
 	<div class="flex justify-stretch">
-		<div class="text-gray border-light-grayish-blue relative w-[18%] border-r-4 border-dotted">
+		<div class="border-light-grayish-blue relative w-[18%] border-r-4 border-dotted text-gray">
 			<div class="flex flex-col items-end p-6 pl-4 text-base">
 				<img
 					src="icons/duggup-logo.png"
@@ -78,14 +78,14 @@
 				<ChevronUp />
 			</div>
 			<div
-				class="top border-brand absolute right-0 top-1/2 aspect-square w-6 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-8 bg-background"
+				class="top absolute right-0 top-1/2 aspect-square w-6 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-8 border-brand bg-background"
 			></div>
 		</div>
 		<div class="m-6 ml-8 flex flex-col items-start justify-center">
 			<h3 class="text-xl font-bold">Co-Founder and CEO</h3>
-			<div class="text-gray flex items-center">
+			<div class="flex items-center text-gray">
 				Full Time
-				<div class="bg-neutral mx-2 h-1 w-1 rounded-full"></div>
+				<div class="mx-2 h-1 w-1 rounded-full bg-neutral"></div>
 				Remote
 			</div>
 		</div>
