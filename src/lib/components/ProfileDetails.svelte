@@ -4,7 +4,7 @@
 	import { Ellipsis, ExternalLink } from 'lucide-svelte';
 </script>
 
-<section class="mb-4 mt-12 flex items-center gap-10">
+<section class="mx-[13%] mb-4 mt-12 flex items-center gap-10">
 	<div class="flex flex-col items-center text-center">
 		<Avatar.Root class="h-[7.5rem] w-[7.5rem] border-4 border-stone-200">
 			<Avatar.Image src="profile-image.png" alt="Profile" />
@@ -22,12 +22,13 @@
 			<Button
 				variant="outline"
 				class="w-max border-[1px] border-b-4 border-[#4d4d4d] hover:border-transparent hover:border-b-[#4d4d4d] hover:bg-[#0066FF] hover:text-white"
-				>Follow</Button
 			>
+				Follow
+			</Button>
 		</div>
 		<div class="flex flex-col">
 			<div class="flex flex-col items-end gap-0.5">
-				<img src="icons/duggup-logo.png" alt="duggup" class="w-8" />
+				<img src="icons/duggup-logo.png" alt="duggup" class="w-8 rounded-full" />
 				<span class="text-base font-semibold">Duggup</span>
 				<span class="text-nowrap text-xs font-semibold text-[#4d4d4d]"> Co-Founder and CEO </span>
 			</div>

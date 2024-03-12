@@ -21,7 +21,7 @@
 
 <nav class="flex px-2 py-3">
 	<div class="flex items-center gap-1">
-		<img src="/icons/duggup-logo.png" alt="duggup logo" class="w-7" />
+		<img src="/icons/site-logo.png" alt="duggup logo" class="w-7" />
 		<span class="mb-1 text-xl font-semibold">duggup</span>
 	</div>
 	<ul class="ml-auto flex items-center gap-6 text-sm">
