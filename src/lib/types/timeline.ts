@@ -1,4 +1,4 @@
-type Article = {
+export type Article = {
 	imgSrc: string;
 	summary: string;
 };
@@ -8,16 +8,18 @@ type Company = {
 	imgSrc: string;
 };
 
+export type JobDetails = {
+	date: string;
+	company: Company;
+	location: string;
+	position: string;
+	type: string;
+	commute?: string;
+};
+
 type JobUpdateDetails = {
 	detailType: 'job-update';
-	details: {
-		date: string;
-		company: Company;
-		location: string;
-		position: string;
-		type: string;
-		commute?: string;
-	};
+	details: JobDetails;
 };
 
 type ArticleDetails = {
