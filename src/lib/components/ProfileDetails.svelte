@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as Avatar from '$lib/components/ui/avatar';
-	import { Button } from '$lib/components/ui/button';
 	import { Ellipsis, ExternalLink } from 'lucide-svelte';
+	import CtaButton from './CTAButton.svelte';
 </script>
 
 <section class="mx-[13%] mb-4 mt-12 flex items-center gap-10">
@@ -19,12 +19,7 @@
 				Engineering. I write hot-takes on building a business, shipping delightful products and
 				accelerating product and career growth.
 			</p>
-			<Button
-				variant="outline"
-				class="w-max border-[1px] border-b-4 border-neutral hover:border-x-transparent hocus:border-b-2 hocus:border-b-neutral hocus:border-t-transparent hocus:bg-brand hocus:text-white"
-			>
-				Follow
-			</Button>
+			<CtaButton text="Follow" />
 		</div>
 		<div class="flex flex-col">
 			<div class="flex flex-col items-end gap-0.5">

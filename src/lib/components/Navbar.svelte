@@ -19,10 +19,10 @@
 	];
 </script>
 
-<nav class="flex px-4 py-3">
+<nav class="flex px-4 py-3 font-semibold">
 	<a class="flex items-center gap-1" href="/">
 		<img src="/icons/site-logo.png" alt="duggup logo" class="w-7" />
-		<span class="mb-1 text-xl font-semibold">duggup</span>
+		<span class="mb-1 text-xl">duggup</span>
 	</a>
 	<ul class="ml-auto flex items-center gap-2 text-sm text-neutral">
 		{#each navItems as navItem}
@@ -42,7 +42,7 @@
 			<span>Post</span>
 		</Button>
 	</ul>
-	<button class="ml-8 flex cursor-pointer items-center gap-2 text-base font-semibold text-neutral">
+	<button class="ml-8 flex cursor-pointer items-center gap-2 text-base text-neutral">
 		<span>
 			<Avatar.Root class="border border-stone-400">
 				<Avatar.Image src="/profile-image.png" alt="profile image" />
