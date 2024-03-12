@@ -19,7 +19,7 @@
 	];
 </script>
 
-<nav class="flex px-2 py-3">
+<nav class="flex px-4 py-3">
 	<div class="flex items-center gap-1">
 		<img src="/icons/site-logo.png" alt="duggup logo" class="w-7" />
 		<span class="mb-1 text-xl font-semibold">duggup</span>
