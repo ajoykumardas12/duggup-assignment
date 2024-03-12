@@ -4,6 +4,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { getNameInitials } from '$lib/helper/getNameInitials';
 	import { userDetails } from '$lib/store/user';
+	import { MenuIcon } from 'lucide-svelte';
 
 	const navItems = [
 		{
@@ -23,12 +24,16 @@
 	const nameInitials = getNameInitials(userDetails.firstName, userDetails.lastName);
 </script>
 
-<nav class="flex px-4 py-3 font-semibold">
+<nav class="flex items-center px-4 py-3 font-semibold">
+	<button class="mr-4 md:hidden">
+		<MenuIcon />
+	</button>
+
 	<a class="flex items-center gap-1" href="/">
 		<img src="/icons/site-logo.png" alt="duggup logo" class="w-7" />
 		<span class="mb-1 text-xl">duggup</span>
 	</a>
-	<ul class="ml-auto flex items-center gap-2 text-sm text-neutral">
+	<ul class="ml-auto hidden items-center gap-2 text-sm text-neutral md:flex">
 		{#each navItems as navItem}
 			<li>
 				<!-- svelte-ignore a11y-invalid-attribute -->
@@ -41,19 +46,23 @@
 				</a>
 			</li>
 		{/each}
-		<Button href="#" variant="outline" class="border-[1px] border-b-4 border-neutral">
-			<img src="icons/plus-square.svg" alt="Post" class="w-5" />
-			<span>Post</span>
-		</Button>
 	</ul>
-	<button class="ml-8 flex cursor-pointer items-center gap-2 text-base text-neutral">
+	<Button
+		href="#"
+		variant="outline"
+		class="ml-auto hidden border-[1px] border-b-4 border-neutral xs:flex md:ml-0"
+	>
+		<img src="icons/plus-square.svg" alt="Post" class="w-5" />
+		<span>Post</span>
+	</Button>
+	<button class="ml-auto flex cursor-pointer items-center gap-2 text-base text-neutral xs:ml-8">
 		<span>
 			<Avatar.Root class="border border-stone-400">
 				<Avatar.Image src={userDetails.imgSrc} alt="profile image" />
 				<Avatar.Fallback>{nameInitials}</Avatar.Fallback>
 			</Avatar.Root>
 		</span>
-		<span>Krishna Kiran</span>
+		<span class="hidden sm:block">Krishna Kiran</span>
 		<ChevronDown size={16} />
 	</button>
 </nav>

@@ -6,8 +6,10 @@
 </script>
 
 <div class="flex justify-stretch">
-	<div class="border-light-grayish-blue relative w-[18%] border-r-4 border-dotted text-gray">
-		<div class="flex flex-col items-end p-6 pl-4 text-base">
+	<div
+		class="border-light-grayish-blue timeline-left-width relative border-r-4 border-dotted text-gray"
+	>
+		<div class="flex flex-col items-end p-6 pl-4 text-right text-base">
 			<img src={props.company.imgSrc} alt="duggup logo" class="aspect-square w-12 rounded-full" />
 			<span class="text-lg font-bold text-primary">{props.company.name}</span>
 			<span>{props.location}</span>
