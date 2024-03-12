@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as Avatar from '$lib/components/ui/avatar';
-	import { Button } from '$lib/components/ui/button';
 	import { Ellipsis, ExternalLink } from 'lucide-svelte';
+	import CtaButton from './CTAButton.svelte';
 </script>
 
 <section class="mx-[13%] mb-4 mt-12 flex items-center gap-10">
@@ -10,7 +10,7 @@
 			<Avatar.Image src="profile-image.png" alt="Profile" />
 			<Avatar.Fallback>KK</Avatar.Fallback>
 		</Avatar.Root>
-		<h1 class="text-2xl font-bold text-grayish-blue">Krishna Kiran</h1>
+		<h1 class="text-grayish-blue text-2xl font-bold">Krishna Kiran</h1>
 	</div>
 	<div class="flex h-max">
 		<div class="flex flex-col justify-between">
@@ -19,20 +19,15 @@
 				Engineering. I write hot-takes on building a business, shipping delightful products and
 				accelerating product and career growth.
 			</p>
-			<Button
-				variant="outline"
-				class="w-max border-[1px] border-b-4 border-neutral hover:border-x-transparent hocus:border-b-2 hocus:border-b-neutral hocus:border-t-transparent hocus:bg-brand hocus:text-white"
-			>
-				Follow
-			</Button>
+			<CtaButton text="Follow" />
 		</div>
 		<div class="flex flex-col">
 			<div class="flex flex-col items-end gap-0.5">
 				<img src="icons/duggup-logo.png" alt="duggup" class="w-8 rounded-full" />
 				<span class="text-base font-semibold">Duggup</span>
-				<span class="text-nowrap text-xs font-semibold text-gray"> Co-Founder and CEO </span>
+				<span class="text-gray text-nowrap text-xs font-semibold"> Co-Founder and CEO </span>
 			</div>
-			<div class="mt-4 flex items-center gap-4 text-nowrap text-neutral">
+			<div class="text-neutral mt-4 flex items-center gap-4 text-nowrap">
 				<!-- svelte-ignore a11y-invalid-attribute -->
 				<a href="#" class="flex gap-1">
 					<span class="text-sm">My Website</span>
