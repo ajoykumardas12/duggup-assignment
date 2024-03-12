@@ -7,7 +7,7 @@
 
 <div class="flex justify-stretch">
 	<div
-		class="border-light-grayish-blue text-gray timeline-left-width relative border-r-4 border-dotted"
+		class="border-light-grayish-blue timeline-left-width relative border-r-4 border-dotted text-gray"
 	>
 		<div class="flex flex-col items-end p-6 pl-4 text-right text-base">
 			<img src={props.company.imgSrc} alt="duggup logo" class="aspect-square w-12 rounded-full" />
@@ -20,15 +20,15 @@
 			<ChevronUp />
 		</div>
 		<div
-			class="top border-brand absolute right-0 top-1/2 aspect-square w-6 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-8 bg-background"
+			class="top absolute right-0 top-1/2 aspect-square w-6 -translate-y-1/2 translate-x-[calc(50%+2px)] rounded-full border-8 border-brand bg-background"
 		></div>
 	</div>
 	<div class="m-6 ml-8 flex flex-col items-start justify-center">
 		<h3 class="text-xl font-bold">{props.position}</h3>
-		<div class="text-gray flex items-center">
+		<div class="flex items-center text-gray">
 			{props.type}
 			{#if props.commute}
-				<div class="bg-neutral mx-2 h-1 w-1 rounded-full"></div>
+				<div class="mx-2 h-1 w-1 rounded-full bg-neutral"></div>
 				{props.commute}
 			{/if}
 		</div>
