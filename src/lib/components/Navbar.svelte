@@ -2,6 +2,8 @@
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { ChevronDown } from 'svelte-radix';
 	import { Button } from '$lib/components/ui/button';
+	import { getNameInitials } from '$lib/helper/getNameInitials';
+	import { userDetails } from '$lib/store/user';
 
 	const navItems = [
 		{
@@ -17,6 +19,8 @@
 			icon: 'icons/book.svg'
 		}
 	];
+
+	const nameInitials = getNameInitials(userDetails.firstName, userDetails.lastName);
 </script>
 
 <nav class="flex px-4 py-3 font-semibold">
@@ -45,8 +49,8 @@
 	<button class="ml-8 flex cursor-pointer items-center gap-2 text-base text-neutral">
 		<span>
 			<Avatar.Root class="border border-stone-400">
-				<Avatar.Image src="/profile-image.png" alt="profile image" />
-				<Avatar.Fallback>KK</Avatar.Fallback>
+				<Avatar.Image src={userDetails.imgSrc} alt="profile image" />
+				<Avatar.Fallback>{nameInitials}</Avatar.Fallback>
 			</Avatar.Root>
 		</span>
 		<span>Krishna Kiran</span>
