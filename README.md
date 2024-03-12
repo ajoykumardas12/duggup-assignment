@@ -1,38 +1,52 @@
-# create-svelte
+# Duggup Assignment
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This project is created for front-end developer assignment at Duggup.
 
-## Creating a project
+[Live Site](https://duggup-assignment-seven.vercel.app/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Built With
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- [SvelteKit](https://kit.svelte.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn UI - Svelte](https://www.shadcn-svelte.com/)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### Installation
 
-## Developing
+To run this project locally,
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone the repo
 
-```bash
-npm run dev
+   ```sh
+   git clone https://github.com/ajoykumardas12/duggup-assignment.git
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+2. Open project folder
 
-## Building
+   ```sh
+   cd duggup-assignment
+   ```
 
-To create a production version of your app:
+3. Install NPM packages
 
-```bash
-npm run build
-```
+   ```sh
+   npm install
+   ```
 
-You can preview the production build with `npm run preview`.
+4. Run dev server
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+   ```sh
+   npm run dev
+   ```
+
+5. Testing:
+   Install Playwright
+
+   ```sh
+   npm init playwright@latest
+   ```
+
+   Run test command
+
+   ```sh
+   npm run test
+   ```
