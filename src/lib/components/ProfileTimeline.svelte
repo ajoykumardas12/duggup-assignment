@@ -17,8 +17,9 @@
 					></div>
 				</div>
 				<div class="m-6 ml-8 flex gap-10">
-					<Post />
-					<Post />
+					{#each timelineDetail.details.articles as article}
+						<Post imgSrc={article.imgSrc} summary={article.summary} />
+					{/each}
 				</div>
 			</div>
 		{:else if timelineDetail.detailType === 'job-update'}
