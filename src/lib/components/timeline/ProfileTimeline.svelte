@@ -4,7 +4,7 @@
 	import TimelineArticles from './TimelineArticles.svelte';
 </script>
 
-<section class="flex flex-col">
+<section class="mt-6 flex flex-col">
 	{#each timelineDetails as timelineDetail}
 		{#if timelineDetail.detailType === 'articles'}
 			<TimelineArticles

@@ -62,6 +62,9 @@ const config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans]
+			},
+			screens: {
+				xs: '460px'
 			}
 		}
 	},
